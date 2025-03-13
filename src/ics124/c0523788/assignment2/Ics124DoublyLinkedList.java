@@ -1,4 +1,4 @@
-package linkedlists;
+package ics124.c0523788.assignment2;
 
 public class Ics124DoublyLinkedList<T> implements Ics124List<T> {
 

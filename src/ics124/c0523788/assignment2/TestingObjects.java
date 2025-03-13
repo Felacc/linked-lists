@@ -1,4 +1,4 @@
-package linkedlists;
+package ics124.c0523788.assignment2;
 import ics124.utils.UnitTest;
 
 public class TestingObjects {

@@ -1,4 +1,4 @@
-package linkedlists;
+package ics124.c0523788.assignment2;
 
 public class Ics124SinglyLinkedList<T> implements Ics124List<T> {
 
@@ -19,7 +19,7 @@ public class Ics124SinglyLinkedList<T> implements Ics124List<T> {
     
     // My Helper Methods
     // Add function that adds to end of list, and only takes data to be added as parameter
-    public void add(T x) {
+    private void add(T x) {
         // Create new node, set value to x
         SlNode node = new SlNode();
         node.x = x;
@@ -37,7 +37,7 @@ public class Ics124SinglyLinkedList<T> implements Ics124List<T> {
     }
     
     // Used to help me visualize list
-    public void printList() {
+    protected void printList() {
         int pos = 0;
         SlNode current = head;
         while (current != null) {
@@ -53,11 +53,11 @@ public class Ics124SinglyLinkedList<T> implements Ics124List<T> {
     // The boolean parameter addingNode is flagged true when validateIndex is being used in a method that can add nodes
     // this is because highest the valid index for those methods is n, for all other methods the highest valid index is n-1
     // If the method is used without the boolean parameter, it defaults to false
-    public void validateIndex(int index) {
+    private void validateIndex(int index) {
         validateIndex(index, false);
     }
 
-    public void validateIndex(int index, boolean addingNode) {
+    private void validateIndex(int index, boolean addingNode) {
         if (addingNode) {
             if (index > n) {
                 throw new IndexOutOfBoundsException("Index " + index + " is out of bound for list of size " + n
@@ -85,7 +85,7 @@ public class Ics124SinglyLinkedList<T> implements Ics124List<T> {
 
     // Get Node:
     // Traverses list from start, finds and returns node at given index
-    public SlNode getNode(int i) {
+    private SlNode getNode(int i) {
         SlNode node = head;
         for (int j = 0; j < i; j++) {
             node = node.next;
