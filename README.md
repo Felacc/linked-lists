@@ -1,2 +1,4 @@
-# ics-124-assignment2
-Implementation of Singly and Doubly Linked Lists in Java
+# linked-lists
+Implementation of singly and doubly linked lists in Java.
+
+Assignment 2 for the ICS-124 (Algorithms and Data Structures) course at Camosun College.
